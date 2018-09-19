@@ -7,12 +7,19 @@ let destruct = false; // used to check if we should clear the screen of the old 
 
 // function which takes an operator and passes it to PushVal() to indicate we are moving through the equation
 PassOperator = op => {
-  console.log(op);
+  console.log(total.length + "OK?");
   // make sure there is not already an operator present then pass an operator to retain function
   if (check() == true) {
     PushVal(op);
-  } else {
-    lastOperator = op;
+  } else if (total.length == 1 && lastOperator != op) {
+    // if the user desires a different operator
+    let str = total[0];
+    clear();
+    doc = document.getElementById("Val");
+    doc.innerHTML = "0";
+    updateCalc(str);
+    doc.innerHTML = str;
+    PushVal(op);
   }
 };
 
