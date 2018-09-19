@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="cstyle.css">
+    <title>CalculatorApp</title>
+</head>
+
+<div class="container">
+    <div class="calculator">
+        <div class="last__val" id="LastVal">0</div>
+        <div class="cdisplay" id="Val">0</div>
+        <div class="ckeys">
+            <button type="button" name="1" onclick="updateCalc(1)"><img src="cimg/1.jpg"> </button>
+            <button type="button" name="2" onclick="updateCalc(2)"><img src="cimg/2.jpg"> </button>
+            <button type="button" name="3" onclick="updateCalc(3)"><img src="cimg/3.jpg"> </button>
+            <button type="button" name="0" onclick="updateCalc(0)"> <img src="cimg/0.jpg"> </button>
+            <button type="button" name="4" onclick="updateCalc(4)"><img src="cimg/4.jpg"> </button>
+            <button type="button" name="5" onclick="updateCalc(5)"><img src="cimg/5.jpg"> </button>
+            <button type="button" name="6" onclick="updateCalc(6)"><img src="cimg/6.jpg"> </button>
+            <button type="button" name="7" onclick="updateCalc(7)"><img src="cimg/7.jpg"> </button>
+            <button type="button" name="8" onclick="updateCalc(8)"> <img src="cimg/8.jpg"> </button>
+            <button type="button" name="9" onclick="updateCalc(9)"><img src="cimg/9.jpg"> </button>
+            <button class="koperator" onclick="PassOperator('+')"> <img src="cimg/plus.jpg"></button>
+            <button class="koperator" onclick="PassOperator('-')"> <img src="cimg/minus.jpg"></button>
+            <button class="koperator" onclick="decimal()"> <img src="cimg/dot.jpg"></button>
+            <button class="koperator" onclick="PassOperator('*')"> <img src="cimg/x.jpg"></button>
+            <button class="koperator" onclick="PassOperator('/')"> <img src="cimg/divi.jpg"></button>
+            <button class="koperator" onclick="AC()"> <img src="cimg/ac.jpg"></button>
+            <button class="kequal" onclick="equal()"> <img src="cimg/equal.jpg"></button>
+        </div>
+    </div>
+</div>
+<script src="calc.js"></script>
+
+</body>
+
+</html>
