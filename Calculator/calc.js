@@ -75,6 +75,7 @@ PushVal = op => {
     total.push(doc.innerHTML);
     string = "";
     appendString(op);
+    dec = "false";
   } else if (total.length == 1) {
     total.push(string);
     operation(op);
